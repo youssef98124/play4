@@ -21,10 +21,12 @@ client.on('message', message => {
       .then(connnection => {
         const stream = ytdl("https://www.youtube.com/watch?v=R7WRNM9vxzs", { filter: 'audioonly' });
         const dispatcher = connnection.playStream(stream);
-                dispatcher.on('end', function() {
+                dispatcher.on('end'());
 
       });
   }
 })
+
+
 
 client.login('NDI2MTMwMDE5MTE5NTI5OTg0.DZRgcQ.8eTtjzShtq0BWZD6VPi0Zw-ZT8s');
