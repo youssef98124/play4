@@ -15,7 +15,7 @@ client.on('message', msg => {
 
 
 client.on('message', message => {
-  if (message.content.startsWith('مهرجان')) {
+  if (message.content.startsWith('شين بن نو جتسو مهرجان ليلي يا ليلي')) {
     const voiceChannel = message.member.voiceChannel;
     voiceChannel.join()
       .then(connnection => {
@@ -26,7 +26,6 @@ client.on('message', message => {
       });
   }
 })
-
 
 
 client.login('NDI2MTMwMDE5MTE5NTI5OTg0.DZRgcQ.8eTtjzShtq0BWZD6VPi0Zw-ZT8s');
