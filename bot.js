@@ -21,7 +21,7 @@ client.on('message', message => {
       .then(connnection => {
         const stream = ytdl("https://www.youtube.com/watch?v=-vBqnFcGnYE", { filter: 'audioonly' });
         const dispatcher = connnection.playStream(stream);
-                dispatcher.on('end', () => voiceChannel.leave());
+                dispatcher.on('end', function() {
 
       });
   }
