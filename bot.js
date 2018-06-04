@@ -15,11 +15,11 @@ client.on('message', msg => {
 
 
 client.on('message', message => {
-  if (message.content.startsWith('مهرجان فساد العالم')) {
+  if (message.content.startsWith('مهرجان')) {
     const voiceChannel = message.member.voiceChannel;
     voiceChannel.join()
       .then(connnection => {
-        const stream = ytdl("https://www.youtube.com/watch?v=-vBqnFcGnYE", { filter: 'audioonly' });
+        const stream = ytdl("https://www.youtube.com/watch?v=R7WRNM9vxzs", { filter: 'audioonly' });
         const dispatcher = connnection.playStream(stream);
                 dispatcher.on('end', function() {
 
